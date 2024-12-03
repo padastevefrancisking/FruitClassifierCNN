@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FruitClassifierCNN.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace FruitClassifierCNN
         public MainForm()
         {
             InitializeComponent();
+            fruitClassified1.Visible = false;
             fruitPicture_gunaPictureBox.Visible = false;
             fruitImage_gunaPanel.Visible = true;
         }
@@ -43,6 +45,11 @@ namespace FruitClassifierCNN
             }
             fruitImage_gunaPanel.Visible = false;
             fruitPicture_gunaPictureBox.Visible = true;
+        }
+
+        private void gunaGradiantButton1_Click(object sender, EventArgs e)
+        {
+            fruitClassified1.Visible = true;
         }
     }
 }

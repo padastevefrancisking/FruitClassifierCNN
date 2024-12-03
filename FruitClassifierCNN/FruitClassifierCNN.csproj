@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserControls\FruitClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FruitClassified.Designer.cs">
+      <DependentUpon>FruitClassified.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowForms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\FruitClassified.resx">
+      <DependentUpon>FruitClassified.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

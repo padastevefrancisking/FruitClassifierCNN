@@ -33,11 +33,12 @@
             this.enterImage_button = new Guna.UI.WinForms.GunaGradiantButton();
             this.description_gunaLabel = new Guna.UI.WinForms.GunaLabel();
             this.bg_gunaPanel = new Guna.UI.WinForms.GunaPanel();
+            this.gunaGradiantButton1 = new Guna.UI.WinForms.GunaGradiantButton();
             this.esc_button = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
-            this.fruitImage_gunaPanel = new Guna.UI.WinForms.GunaPanel();
             this.fruitPicture_gunaPictureBox = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaGradiantButton1 = new Guna.UI.WinForms.GunaGradiantButton();
+            this.fruitImage_gunaPanel = new Guna.UI.WinForms.GunaPanel();
+            this.fruitClassified1 = new FruitClassifierCNN.UserControls.FruitClassified();
             this.bg_gunaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fruitPicture_gunaPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             this.enterImage_button.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.enterImage_button.Image = null;
             this.enterImage_button.ImageSize = new System.Drawing.Size(20, 20);
-            this.enterImage_button.Location = new System.Drawing.Point(105, 544);
+            this.enterImage_button.Location = new System.Drawing.Point(105, 649);
             this.enterImage_button.Name = "enterImage_button";
             this.enterImage_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(208)))), ((int)(((byte)(103)))));
             this.enterImage_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(187)))), ((int)(((byte)(55)))));
@@ -93,15 +94,15 @@
             // description_gunaLabel
             // 
             this.description_gunaLabel.AutoSize = true;
-            this.description_gunaLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_gunaLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F);
             this.description_gunaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.description_gunaLabel.Location = new System.Drawing.Point(101, 430);
             this.description_gunaLabel.Name = "description_gunaLabel";
-            this.description_gunaLabel.Size = new System.Drawing.Size(631, 84);
+            this.description_gunaLabel.Size = new System.Drawing.Size(720, 152);
             this.description_gunaLabel.TabIndex = 5;
-            this.description_gunaLabel.Text = "This software is a Fruit Classifier software that utilizes a Convolutional \r\nNeur" +
-    "al Network to accurately identify and categorize different types of \r\nfruits bas" +
-    "ed on their visual characteristics.";
+            this.description_gunaLabel.Text = "This software is a Fruit Classifier software that utilizes a \r\nConvolutional Neur" +
+    "al Network to accurately identify and \r\ncategorize different types of fruits bas" +
+    "ed on their visual \r\ncharacteristics.";
             // 
             // bg_gunaPanel
             // 
@@ -117,6 +118,32 @@
             this.bg_gunaPanel.Name = "bg_gunaPanel";
             this.bg_gunaPanel.Size = new System.Drawing.Size(1910, 897);
             this.bg_gunaPanel.TabIndex = 0;
+            // 
+            // gunaGradiantButton1
+            // 
+            this.gunaGradiantButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaGradiantButton1.AnimationSpeed = 0.03F;
+            this.gunaGradiantButton1.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(128)))));
+            this.gunaGradiantButton1.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(205)))), ((int)(((byte)(62)))));
+            this.gunaGradiantButton1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGradiantButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaGradiantButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.gunaGradiantButton1.Image = null;
+            this.gunaGradiantButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaGradiantButton1.Location = new System.Drawing.Point(105, 741);
+            this.gunaGradiantButton1.Name = "gunaGradiantButton1";
+            this.gunaGradiantButton1.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(208)))), ((int)(((byte)(103)))));
+            this.gunaGradiantButton1.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(187)))), ((int)(((byte)(55)))));
+            this.gunaGradiantButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaGradiantButton1.OnHoverImage = null;
+            this.gunaGradiantButton1.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(165)))), ((int)(((byte)(24)))));
+            this.gunaGradiantButton1.OnPressedDepth = 70;
+            this.gunaGradiantButton1.Radius = 30;
+            this.gunaGradiantButton1.Size = new System.Drawing.Size(302, 76);
+            this.gunaGradiantButton1.TabIndex = 7;
+            this.gunaGradiantButton1.Text = "ENTER";
+            this.gunaGradiantButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaGradiantButton1.Click += new System.EventHandler(this.gunaGradiantButton1_Click);
             // 
             // esc_button
             // 
@@ -159,6 +186,18 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(40, 41);
             this.gunaLinePanel1.TabIndex = 2;
             // 
+            // fruitPicture_gunaPictureBox
+            // 
+            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
+            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
+            this.fruitPicture_gunaPictureBox.Radius = 20;
+            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
+            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fruitPicture_gunaPictureBox.TabIndex = 6;
+            this.fruitPicture_gunaPictureBox.TabStop = false;
+            // 
             // fruitImage_gunaPanel
             // 
             this.fruitImage_gunaPanel.BackColor = System.Drawing.Color.Transparent;
@@ -169,42 +208,13 @@
             this.fruitImage_gunaPanel.Size = new System.Drawing.Size(873, 894);
             this.fruitImage_gunaPanel.TabIndex = 4;
             // 
-            // fruitPicture_gunaPictureBox
+            // fruitClassified1
             // 
-            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.White;
-            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.White;
-            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
-            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
-            this.fruitPicture_gunaPictureBox.Radius = 20;
-            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
-            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.fruitPicture_gunaPictureBox.TabIndex = 6;
-            this.fruitPicture_gunaPictureBox.TabStop = false;
-            // 
-            // gunaGradiantButton1
-            // 
-            this.gunaGradiantButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaGradiantButton1.AnimationSpeed = 0.03F;
-            this.gunaGradiantButton1.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(128)))));
-            this.gunaGradiantButton1.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(205)))), ((int)(((byte)(62)))));
-            this.gunaGradiantButton1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaGradiantButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaGradiantButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.gunaGradiantButton1.Image = null;
-            this.gunaGradiantButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradiantButton1.Location = new System.Drawing.Point(105, 641);
-            this.gunaGradiantButton1.Name = "gunaGradiantButton1";
-            this.gunaGradiantButton1.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(208)))), ((int)(((byte)(103)))));
-            this.gunaGradiantButton1.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(187)))), ((int)(((byte)(55)))));
-            this.gunaGradiantButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaGradiantButton1.OnHoverImage = null;
-            this.gunaGradiantButton1.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(165)))), ((int)(((byte)(24)))));
-            this.gunaGradiantButton1.OnPressedDepth = 70;
-            this.gunaGradiantButton1.Radius = 30;
-            this.gunaGradiantButton1.Size = new System.Drawing.Size(302, 76);
-            this.gunaGradiantButton1.TabIndex = 7;
-            this.gunaGradiantButton1.Text = "ENTER";
-            this.gunaGradiantButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fruitClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.fruitClassified1.Location = new System.Drawing.Point(70, 100);
+            this.fruitClassified1.Name = "fruitClassified1";
+            this.fruitClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.fruitClassified1.TabIndex = 4;
             // 
             // MainForm
             // 
@@ -213,6 +223,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1980, 1020);
+            this.Controls.Add(this.fruitClassified1);
             this.Controls.Add(this.esc_button);
             this.Controls.Add(this.gunaLinePanel1);
             this.Controls.Add(this.topText_gunaLabel);
@@ -241,6 +252,7 @@
         private Guna.UI.WinForms.GunaAdvenceButton esc_button;
         private Guna.UI.WinForms.GunaPictureBox fruitPicture_gunaPictureBox;
         private Guna.UI.WinForms.GunaGradiantButton gunaGradiantButton1;
+        private UserControls.FruitClassified fruitClassified1;
     }
 }
 
