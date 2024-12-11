@@ -1,0 +1,9 @@
+{
+    "optimizer": "<keras.src.optimizers.adam.Adam object at 0x0000014B94B36C90>",
+    "loss": "categorical_crossentropy",
+    "metrics": [
+        "<Mean name=loss>",
+        "<CompileMetrics name=compile_metrics>"
+    ],
+    "model_version": "1.0"
+}

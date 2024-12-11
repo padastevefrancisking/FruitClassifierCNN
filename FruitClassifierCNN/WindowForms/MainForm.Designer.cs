@@ -34,10 +34,10 @@
             this.description_gunaLabel = new Guna.UI.WinForms.GunaLabel();
             this.bg_gunaPanel = new Guna.UI.WinForms.GunaPanel();
             this.gunaGradiantButton1 = new Guna.UI.WinForms.GunaGradiantButton();
-            this.esc_button = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.fruitPicture_gunaPictureBox = new Guna.UI.WinForms.GunaPictureBox();
             this.fruitImage_gunaPanel = new Guna.UI.WinForms.GunaPanel();
+            this.esc_button = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.fruitClassified1 = new FruitClassifierCNN.UserControls.FruitClassified();
             this.bg_gunaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fruitPicture_gunaPictureBox)).BeginInit();
@@ -145,6 +145,28 @@
             this.gunaGradiantButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGradiantButton1.Click += new System.EventHandler(this.gunaGradiantButton1_Click);
             // 
+            // fruitPicture_gunaPictureBox
+            // 
+            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
+            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
+            this.fruitPicture_gunaPictureBox.Radius = 20;
+            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
+            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fruitPicture_gunaPictureBox.TabIndex = 6;
+            this.fruitPicture_gunaPictureBox.TabStop = false;
+            // 
+            // fruitImage_gunaPanel
+            // 
+            this.fruitImage_gunaPanel.BackColor = System.Drawing.Color.Transparent;
+            this.fruitImage_gunaPanel.BackgroundImage = global::FruitClassifierCNN.Properties.Resources.PngItem_1945310;
+            this.fruitImage_gunaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.fruitImage_gunaPanel.Location = new System.Drawing.Point(1034, 3);
+            this.fruitImage_gunaPanel.Name = "fruitImage_gunaPanel";
+            this.fruitImage_gunaPanel.Size = new System.Drawing.Size(873, 894);
+            this.fruitImage_gunaPanel.TabIndex = 4;
+            // 
             // esc_button
             // 
             this.esc_button.AnimationHoverSpeed = 0.07F;
@@ -185,28 +207,6 @@
             this.gunaLinePanel1.Name = "gunaLinePanel1";
             this.gunaLinePanel1.Size = new System.Drawing.Size(40, 41);
             this.gunaLinePanel1.TabIndex = 2;
-            // 
-            // fruitPicture_gunaPictureBox
-            // 
-            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.Transparent;
-            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
-            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
-            this.fruitPicture_gunaPictureBox.Radius = 20;
-            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
-            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.fruitPicture_gunaPictureBox.TabIndex = 6;
-            this.fruitPicture_gunaPictureBox.TabStop = false;
-            // 
-            // fruitImage_gunaPanel
-            // 
-            this.fruitImage_gunaPanel.BackColor = System.Drawing.Color.Transparent;
-            this.fruitImage_gunaPanel.BackgroundImage = global::FruitClassifierCNN.Properties.Resources.PngItem_1945310;
-            this.fruitImage_gunaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fruitImage_gunaPanel.Location = new System.Drawing.Point(1034, 3);
-            this.fruitImage_gunaPanel.Name = "fruitImage_gunaPanel";
-            this.fruitImage_gunaPanel.Size = new System.Drawing.Size(873, 894);
-            this.fruitImage_gunaPanel.TabIndex = 4;
             // 
             // fruitClassified1
             // 

@@ -42,9 +42,9 @@
             this.fruitClassifyLabel_gunaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.fruitClassifyLabel_gunaLabel.Location = new System.Drawing.Point(84, 140);
             this.fruitClassifyLabel_gunaLabel.Name = "fruitClassifyLabel_gunaLabel";
-            this.fruitClassifyLabel_gunaLabel.Size = new System.Drawing.Size(736, 246);
+            this.fruitClassifyLabel_gunaLabel.Size = new System.Drawing.Size(766, 246);
             this.fruitClassifyLabel_gunaLabel.TabIndex = 3;
-            this.fruitClassifyLabel_gunaLabel.Text = "THIS FRUIT IS A\r\nMANGO";
+            this.fruitClassifyLabel_gunaLabel.Text = "RE-ENTER FRUIT\r\nIMAGE";
             // 
             // fruitDescription_gunaLabel
             // 
@@ -53,9 +53,9 @@
             this.fruitDescription_gunaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.fruitDescription_gunaLabel.Location = new System.Drawing.Point(101, 430);
             this.fruitDescription_gunaLabel.Name = "fruitDescription_gunaLabel";
-            this.fruitDescription_gunaLabel.Size = new System.Drawing.Size(765, 76);
+            this.fruitDescription_gunaLabel.Size = new System.Drawing.Size(25, 38);
             this.fruitDescription_gunaLabel.TabIndex = 6;
-            this.fruitDescription_gunaLabel.Text = "Mangos are chuchu Mangos are chuchu Mangos are chuchu\r\n\r\n";
+            this.fruitDescription_gunaLabel.Text = " ";
             // 
             // enterAgain_gunaGradiantButton
             // 
@@ -113,10 +113,9 @@
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaLabel fruitClassifyLabel_gunaLabel;
         private Guna.UI.WinForms.GunaLabel fruitDescription_gunaLabel;
         private Guna.UI.WinForms.GunaPictureBox fruitPicture_gunaPictureBox;
         private Guna.UI.WinForms.GunaGradiantButton enterAgain_gunaGradiantButton;
+        public Guna.UI.WinForms.GunaLabel fruitClassifyLabel_gunaLabel;
     }
 }
