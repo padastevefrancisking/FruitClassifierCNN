@@ -117,35 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ripeCucumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ripeCucumber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PngItem_1945310" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PngItem_1945310.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PngItem_1122145" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PngItem_1122145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mangoUnripe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mangoUnripe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mango" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mango.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-armando-h-210148640-16076834" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-armando-h-210148640-16076834.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\corn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tomato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BananaDescription.Text" xml:space="preserve">
+    <value>A ripe cucumber is firm to the touch, has a vibrant, deep green color 
+(depending on variety), and is free of soft spots or discoloration; when 
+gently squeezed, it should feel firm but not hard, indicating it's ready to 
+harvest. It is a widely-cultivated creeping vine plant in the family 
+Cucurbitaceae that bears cylindrical to spherical fruits, which are used as
+culinary vegetables. Considered an annual plant, there are three main 
+types of cucumber slicing, pickling, and seedless within which several 
+cultivars have been created. The cucumber originates in Asia extending 
+from India, Nepal, Bangladesh, China (Yunnan, Guizhou, Guangxi), and 
+Northern Thailand, but now grows on most continents, and many 
+different types of cucumber are grown commercially and traded on the 
+global market.</value>
   </data>
 </root>

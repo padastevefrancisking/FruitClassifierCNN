@@ -34,11 +34,16 @@
             this.description_gunaLabel = new Guna.UI.WinForms.GunaLabel();
             this.bg_gunaPanel = new Guna.UI.WinForms.GunaPanel();
             this.gunaGradiantButton1 = new Guna.UI.WinForms.GunaGradiantButton();
-            this.fruitPicture_gunaPictureBox = new Guna.UI.WinForms.GunaPictureBox();
-            this.fruitImage_gunaPanel = new Guna.UI.WinForms.GunaPanel();
             this.esc_button = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.fruitPicture_gunaPictureBox = new Guna.UI.WinForms.GunaPictureBox();
+            this.fruitImage_gunaPanel = new Guna.UI.WinForms.GunaPanel();
+            this.cornClassified1 = new FruitClassifierCNN.UserControls.CornClassified();
+            this.ripeCucumberClassified1 = new FruitClassifierCNN.UserControls.RipeCucumberClassified();
+            this.bananaClassified1 = new FruitClassifierCNN.UserControls.BananaClassified();
+            this.mangoClassified1 = new FruitClassifierCNN.UserControls.MangoClassified();
             this.fruitClassified1 = new FruitClassifierCNN.UserControls.FruitClassified();
+            this.tomatoClassified1 = new FruitClassifierCNN.UserControls.TomatoClassified();
             this.bg_gunaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fruitPicture_gunaPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -145,28 +150,6 @@
             this.gunaGradiantButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGradiantButton1.Click += new System.EventHandler(this.gunaGradiantButton1_Click);
             // 
-            // fruitPicture_gunaPictureBox
-            // 
-            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.Transparent;
-            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
-            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
-            this.fruitPicture_gunaPictureBox.Radius = 20;
-            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
-            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.fruitPicture_gunaPictureBox.TabIndex = 6;
-            this.fruitPicture_gunaPictureBox.TabStop = false;
-            // 
-            // fruitImage_gunaPanel
-            // 
-            this.fruitImage_gunaPanel.BackColor = System.Drawing.Color.Transparent;
-            this.fruitImage_gunaPanel.BackgroundImage = global::FruitClassifierCNN.Properties.Resources.PngItem_1945310;
-            this.fruitImage_gunaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fruitImage_gunaPanel.Location = new System.Drawing.Point(1034, 3);
-            this.fruitImage_gunaPanel.Name = "fruitImage_gunaPanel";
-            this.fruitImage_gunaPanel.Size = new System.Drawing.Size(873, 894);
-            this.fruitImage_gunaPanel.TabIndex = 4;
-            // 
             // esc_button
             // 
             this.esc_button.AnimationHoverSpeed = 0.07F;
@@ -208,6 +191,60 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(40, 41);
             this.gunaLinePanel1.TabIndex = 2;
             // 
+            // fruitPicture_gunaPictureBox
+            // 
+            this.fruitPicture_gunaPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.BaseColor = System.Drawing.Color.Transparent;
+            this.fruitPicture_gunaPictureBox.Location = new System.Drawing.Point(1016, 52);
+            this.fruitPicture_gunaPictureBox.Name = "fruitPicture_gunaPictureBox";
+            this.fruitPicture_gunaPictureBox.Radius = 20;
+            this.fruitPicture_gunaPictureBox.Size = new System.Drawing.Size(850, 800);
+            this.fruitPicture_gunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fruitPicture_gunaPictureBox.TabIndex = 6;
+            this.fruitPicture_gunaPictureBox.TabStop = false;
+            // 
+            // fruitImage_gunaPanel
+            // 
+            this.fruitImage_gunaPanel.BackColor = System.Drawing.Color.Transparent;
+            this.fruitImage_gunaPanel.BackgroundImage = global::FruitClassifierCNN.Properties.Resources.PngItem_1945310;
+            this.fruitImage_gunaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.fruitImage_gunaPanel.Location = new System.Drawing.Point(1034, 3);
+            this.fruitImage_gunaPanel.Name = "fruitImage_gunaPanel";
+            this.fruitImage_gunaPanel.Size = new System.Drawing.Size(873, 894);
+            this.fruitImage_gunaPanel.TabIndex = 4;
+            // 
+            // cornClassified1
+            // 
+            this.cornClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.cornClassified1.Location = new System.Drawing.Point(70, 100);
+            this.cornClassified1.Name = "cornClassified1";
+            this.cornClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.cornClassified1.TabIndex = 8;
+            // 
+            // ripeCucumberClassified1
+            // 
+            this.ripeCucumberClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.ripeCucumberClassified1.Location = new System.Drawing.Point(70, 100);
+            this.ripeCucumberClassified1.Name = "ripeCucumberClassified1";
+            this.ripeCucumberClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.ripeCucumberClassified1.TabIndex = 7;
+            // 
+            // bananaClassified1
+            // 
+            this.bananaClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.bananaClassified1.Location = new System.Drawing.Point(70, 100);
+            this.bananaClassified1.Name = "bananaClassified1";
+            this.bananaClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.bananaClassified1.TabIndex = 6;
+            // 
+            // mangoClassified1
+            // 
+            this.mangoClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.mangoClassified1.Location = new System.Drawing.Point(70, 100);
+            this.mangoClassified1.Name = "mangoClassified1";
+            this.mangoClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.mangoClassified1.TabIndex = 5;
+            // 
             // fruitClassified1
             // 
             this.fruitClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
@@ -216,6 +253,14 @@
             this.fruitClassified1.Size = new System.Drawing.Size(1910, 897);
             this.fruitClassified1.TabIndex = 4;
             // 
+            // tomatoClassified1
+            // 
+            this.tomatoClassified1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(232)))));
+            this.tomatoClassified1.Location = new System.Drawing.Point(70, 100);
+            this.tomatoClassified1.Name = "tomatoClassified1";
+            this.tomatoClassified1.Size = new System.Drawing.Size(1910, 897);
+            this.tomatoClassified1.TabIndex = 9;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,6 +268,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1980, 1020);
+            this.Controls.Add(this.tomatoClassified1);
+            this.Controls.Add(this.cornClassified1);
+            this.Controls.Add(this.ripeCucumberClassified1);
+            this.Controls.Add(this.bananaClassified1);
+            this.Controls.Add(this.mangoClassified1);
             this.Controls.Add(this.fruitClassified1);
             this.Controls.Add(this.esc_button);
             this.Controls.Add(this.gunaLinePanel1);
@@ -253,6 +303,11 @@
         private Guna.UI.WinForms.GunaPictureBox fruitPicture_gunaPictureBox;
         private Guna.UI.WinForms.GunaGradiantButton gunaGradiantButton1;
         private UserControls.FruitClassified fruitClassified1;
+        private UserControls.MangoClassified mangoClassified1;
+        private UserControls.BananaClassified bananaClassified1;
+        private UserControls.RipeCucumberClassified ripeCucumberClassified1;
+        private UserControls.CornClassified cornClassified1;
+        private UserControls.TomatoClassified tomatoClassified1;
     }
 }
 

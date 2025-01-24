@@ -106,11 +106,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserControls\BananaClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BananaClassified.Designer.cs">
+      <DependentUpon>BananaClassified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CornClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CornClassified.Designer.cs">
+      <DependentUpon>CornClassified.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FruitClassified.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\FruitClassified.Designer.cs">
       <DependentUpon>FruitClassified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MangoClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MangoClassified.Designer.cs">
+      <DependentUpon>MangoClassified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RipeCucumberClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RipeCucumberClassified.Designer.cs">
+      <DependentUpon>RipeCucumberClassified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TomatoClassified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TomatoClassified.Designer.cs">
+      <DependentUpon>TomatoClassified.cs</DependentUpon>
     </Compile>
     <Compile Include="WindowForms\MainForm.cs">
       <SubType>Form</SubType>
@@ -130,8 +160,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\BananaClassified.resx">
+      <DependentUpon>BananaClassified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CornClassified.resx">
+      <DependentUpon>CornClassified.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FruitClassified.resx">
       <DependentUpon>FruitClassified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MangoClassified.resx">
+      <DependentUpon>MangoClassified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RipeCucumberClassified.resx">
+      <DependentUpon>RipeCucumberClassified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TomatoClassified.resx">
+      <DependentUpon>TomatoClassified.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -181,7 +226,24 @@
   <ItemGroup>
     <None Include="Resources\close.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pexels-armando-h-210148640-16076834.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangoUnripe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ripeCucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.7.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.7.0\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -23,8 +23,15 @@ namespace FruitClassifierCNN
         {
             InitializeComponent();
             InitializeModel();
-            LoadModel(@"C:\Users\Acer\Desktop\IS pics\PADA_ARRADAZA_IS\config.json", @"C:\Users\Acer\Desktop\IS pics\PADA_ARRADAZA_IS\model.weights.h5"); 
+            LoadModel(@"C:\Users\Acer\Documents\GitHub\FruitClassifierCNN\FruitClassifierCNN\Models\config.json", @"C:\Users\Acer\Documents\GitHub\FruitClassifierCNN\FruitClassifierCNN\Models\model.weights.h5"); 
+            
             fruitClassified1.Visible = false;
+            mangoClassified1.Visible = false;
+            bananaClassified1.Visible = false;
+            ripeCucumberClassified1.Visible = false;
+            cornClassified1.Visible = false;
+            tomatoClassified1.Visible = false;
+
             fruitPicture_gunaPictureBox.Visible = false;
             fruitImage_gunaPanel.Visible = true;
         }
@@ -181,12 +188,62 @@ namespace FruitClassifierCNN
 
         private void gunaGradiantButton1_Click(object sender, EventArgs e)
         {
-            string name = PredictImage(imagePath);
-            fruitClassified1.Visible = true;
+            string predictedClassName = PredictImage(imagePath);
+            if(predictedClassName == "Mango")
+            {
+                mangoClassified1.Visible = true;
+            }
+            else if(predictedClassName == "Banana")
+            {
+                bananaClassified1.Visible = true;
+            }
+            else if(predictedClassName == "Ripe Cucumber")
+            {
+                ripeCucumberClassified1.Visible = true;
+            }
+            else if (predictedClassName == "Corn")
+            {
+                cornClassified1.Visible = true;           
+            }
+            else if (predictedClassName == "Tomato")
+            {
+                tomatoClassified1.Visible = true;
+            }
+            else
+            {
+                fruitClassified1.Visible = true;
+            } 
+        }
+
+        public void reshapeTo_100X100(string imagePath)
+        {
+            using (Image originalImage = Image.FromFile(imagePath))
+            {
+                // Create a new Bitmap with the desired size
+                using (Bitmap resizedImage = new Bitmap(100, 100))
+                {
+                    // Draw the resized image
+                    using (Graphics graphics = Graphics.FromImage(resizedImage))
+                    {
+                        graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                        graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                        graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+
+                        // Draw the image onto the resized bitmap
+                        graphics.DrawImage(originalImage, 0, 0, 100, 100);
+                    }
+
+                    // Use the resized image in memory (e.g., display it in a PictureBox)
+                    // Example: Convert to a byte array or use as needed
+                    //Console.WriteLine("Image resized successfully!");
+                }
+            }
         }
 
         public string PredictImage(string imagePath)
         {
+            //reshapeTo_100X100(imagePath);
+
             try
             {
                 dynamic imageArray = PreprocessImage(imagePath);
@@ -233,7 +290,7 @@ namespace FruitClassifierCNN
                     //MessageBox.Show($"Predicted Index: {index}");
                     string predictedClass1 = classNames[index];
 
-                    MessageBox.Show($"Predicted class: {predictedClass1}");
+                    //MessageBox.Show($"Predicted class: {predictedClass1}");
                     return predictedClass1;
                 }
             }

@@ -63,6 +63,16 @@ namespace FruitClassifierCNN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banana {
+            get {
+                object obj = ResourceManager.GetObject("banana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
@@ -73,9 +83,39 @@ namespace FruitClassifierCNN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap corn {
+            get {
+                object obj = ResourceManager.GetObject("corn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mango {
             get {
                 object obj = ResourceManager.GetObject("mango", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mangoUnripe {
+            get {
+                object obj = ResourceManager.GetObject("mangoUnripe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_armando_h_210148640_16076834 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-armando-h-210148640-16076834", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,26 @@ namespace FruitClassifierCNN.Properties {
         internal static System.Drawing.Bitmap PngItem_1945310 {
             get {
                 object obj = ResourceManager.GetObject("PngItem_1945310", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ripeCucumber {
+            get {
+                object obj = ResourceManager.GetObject("ripeCucumber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tomato {
+            get {
+                object obj = ResourceManager.GetObject("tomato", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
