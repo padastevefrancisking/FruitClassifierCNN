@@ -1,0 +1,6 @@
+{
+    "model_name": "My Keras Model",
+    "version": "1.0",
+    "framework": "TensorFlow/Keras",
+    "description": "Model extracted from .keras file."
+}
