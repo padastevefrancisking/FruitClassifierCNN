@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitClassifierCNN", "FruitClassifierCNN\FruitClassifierCNN.csproj", "{C37F0AE6-BF8C-4CB5-A7B0-BFB80EFE4259}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{842F6F5C-38E2-4A07-95F6-55A04ADA6130}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\IS pics\PADA_ARRADAZA_IS\model_extract.py = ..\..\..\Desktop\IS pics\PADA_ARRADAZA_IS\model_extract.py
+		..\..\..\Downloads\Test11.keras = ..\..\..\Downloads\Test11.keras
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
